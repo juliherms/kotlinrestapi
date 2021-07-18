@@ -10,4 +10,8 @@ data class Product(val name:String, var price:Double? = 55.5){
         return this.name == other.name
     }
 
+    override fun hashCode(): Int {
+        return name.hashCode()
+    }
+
 }
